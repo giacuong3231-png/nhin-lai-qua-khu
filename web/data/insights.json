@@ -1,0 +1,247 @@
+{
+  "NVDA": {
+    "name": "NVIDIA",
+    "story": "Từ hãng chip game, NVIDIA trở thành 'ông vua' của làn sóng AI khi GPU của họ là phần cứng nền tảng huấn luyện các mô hình lớn. Cú bùng nổ ChatGPT đưa cổ phiếu tăng phi mã, vốn hóa vượt mốc nghìn tỷ rồi tiến tới hàng đầu thế giới. Bài học: đôi khi người bán 'cuốc xẻng' trong cơn sốt đào vàng mới là người giàu nhất.",
+    "events": [
+      { "date": "2021-07-20", "label": "Chia tách 4:1" },
+      { "date": "2023-05-25", "label": "Bùng nổ AI sau báo cáo" },
+      { "date": "2024-06-10", "label": "Chia tách 10:1" }
+    ]
+  },
+  "TSM": {
+    "name": "TSMC",
+    "story": "TSMC là xưởng đúc chip lớn nhất thế giới, gia công gần như toàn bộ chip cao cấp cho Apple, NVIDIA, AMD. Họ không thiết kế chip nổi tiếng nào nhưng nắm 'nút thắt cổ chai' của cả ngành bán dẫn toàn cầu. Cơn khát chip AI và căng thẳng địa chính trị quanh Đài Loan khiến cổ phiếu vừa hấp dẫn vừa nhạy cảm với tin tức.",
+    "events": [
+      { "date": "2023-05-25", "label": "Hưởng lợi sóng AI" }
+    ]
+  },
+  "PLTR": {
+    "name": "Palantir",
+    "story": "Palantir chuyên phần mềm phân tích dữ liệu lớn cho chính phủ, quân đội và doanh nghiệp, từng bị nghi ngờ vì khó hiểu và lỗ kéo dài. Lên sàn năm 2020, cổ phiếu trồi sụt dữ dội trước khi câu chuyện AI doanh nghiệp giúp công ty có lãi và được đưa vào S&P 500. Bài học về một cổ phiếu 'gây tranh cãi' chờ đúng thời của mình.",
+    "events": [
+      { "date": "2020-09-30", "label": "Niêm yết (direct listing)" }
+    ]
+  },
+  "MSTR": {
+    "name": "MicroStrategy",
+    "story": "Vốn là công ty phần mềm phân tích nhàm chán, MicroStrategy lột xác thành 'quỹ Bitcoin trá hình' khi CEO Michael Saylor dồn tiền mặt và đi vay để ôm Bitcoin từ năm 2020. Cổ phiếu trở thành đòn bẩy của giá Bitcoin: coin lên thì bay, coin xuống thì rơi mạnh hơn. Một canh bạc all-in được khuếch đại nhiều lần.",
+    "events": [
+      { "date": "2020-08-11", "label": "Bắt đầu mua Bitcoin" }
+    ]
+  },
+  "TSLA": {
+    "name": "Tesla",
+    "story": "Tesla biến xe điện từ thứ ngách thành xu hướng toàn cầu, đưa Elon Musk thành tâm điểm và cổ phiếu thành hiện tượng của nhà đầu tư nhỏ lẻ. Sau cú tăng thần tốc 2020-2021 và hai lần chia tách, giá lao dốc mạnh năm 2022 rồi lại biến động theo từng dòng tweet của Musk. Biểu tượng của cả lòng tham lẫn nỗi sợ trên thị trường.",
+    "events": [
+      { "date": "2020-08-31", "label": "Chia tách 5:1" },
+      { "date": "2022-08-25", "label": "Chia tách 3:1" }
+    ]
+  },
+  "VIC": {
+    "name": "Vingroup",
+    "story": "Vingroup là tập đoàn tư nhân lớn nhất Việt Nam, trải từ bất động sản (Vinhomes), bán lẻ, nghỉ dưỡng tới tham vọng xe điện VinFast. Cổ phiếu họ Vin từng là trụ cột kéo VN-Index, nhưng giai đoạn 2022-2023 chịu áp lực lớn từ thị trường bất động sản đóng băng và dòng tiền đổ vào VinFast. Đặt cược vào VIC là đặt cược vào tham vọng của một đế chế.",
+    "events": []
+  },
+  "NVL": {
+    "name": "Novaland",
+    "story": "Novaland là 'ông lớn' bất động sản phía Nam với loạt đại dự án nghỉ dưỡng quy mô khổng lồ. Khi tín dụng bị siết và trái phiếu doanh nghiệp khủng hoảng cuối 2022, cổ phiếu NVL gần như rơi tự do với chuỗi nhiều phiên sàn liên tiếp, trở thành tâm điểm của cơn bão thanh khoản. Bài học đắt giá về đòn bẩy và rủi ro dòng tiền trong bất động sản.",
+    "events": [
+      { "date": "2016-12-28", "label": "Niêm yết HOSE" }
+    ]
+  },
+  "VNM": {
+    "name": "Vinamilk",
+    "story": "Vinamilk là doanh nghiệp sữa số một Việt Nam, từng được xem là cổ phiếu 'quốc dân' an toàn, đều đặn trả cổ tức tiền mặt cao. Nhưng khi thị phần bị cạnh tranh và tăng trưởng chậm lại, giá cổ phiếu đi ngang nhiều năm dù doanh nghiệp vẫn làm ăn tốt. Bài học: một công ty tốt chưa chắc là một khoản đầu tư tăng giá mạnh.",
+    "events": []
+  },
+  "HPG": {
+    "name": "Hòa Phát",
+    "story": "Hòa Phát là 'vua thép' Việt Nam, cổ phiếu mang tính chu kỳ rất rõ theo giá thép và bất động sản. Sóng thép 2020-2021 đưa giá tăng nhiều lần và tạo ra lứa nhà đầu tư F0 đông đảo, trước khi điều chỉnh sâu khi giá thép hạ nhiệt năm 2022. Đại dự án Dung Quất 2 là canh bạc tăng trưởng tiếp theo của tập đoàn.",
+    "events": []
+  },
+  "FPT": {
+    "name": "FPT",
+    "story": "FPT là doanh nghiệp công nghệ hàng đầu Việt Nam, mạnh ở xuất khẩu phần mềm, viễn thông và giáo dục. Khác với nhiều cổ phiếu nóng, FPT tăng trưởng bền bỉ, đều đặn nhiều năm và hưởng lợi từ làn sóng chuyển đổi số và AI toàn cầu. Thường được nhắc đến như ví dụ điển hình của việc 'nắm giữ dài hạn một doanh nghiệp tốt'.",
+    "events": []
+  },
+  "MWG": {
+    "name": "Thế Giới Di Động",
+    "story": "Thế Giới Di Động thống trị bán lẻ điện thoại - điện máy Việt Nam rồi đặt cược lớn vào chuỗi Bách Hóa Xanh để vào ngành thực phẩm. Cổ phiếu từng là cưng của thị trường, nhưng sức mua yếu và cuộc 'tái cấu trúc' Bách Hóa Xanh năm 2023 kéo lợi nhuận và giá lao dốc trước khi hồi phục. Câu chuyện về cái giá của tham vọng mở rộng.",
+    "events": []
+  },
+  "XAUUSD": {
+    "name": "Vàng quốc tế",
+    "story": "Vàng là kênh trú ẩn kinh điển, thường tỏa sáng khi bất ổn địa chính trị, lạm phát cao hoặc khủng hoảng. Giai đoạn 2020 đại dịch và 2024-2025 căng thẳng toàn cầu, giá vàng thế giới liên tục lập đỉnh lịch sử mới. Không tạo ra dòng tiền nhưng là 'bảo hiểm' được loài người tin cậy hàng nghìn năm.",
+    "events": [
+      { "date": "2020-03-01", "label": "Bất ổn do COVID" }
+    ]
+  },
+  "XAGUSD": {
+    "name": "Bạc quốc tế",
+    "story": "Bạc vừa là kim loại quý trú ẩn, vừa là kim loại công nghiệp (pin mặt trời, điện tử), nên biến động mạnh hơn vàng. Khi giá chạy, bạc thường tăng dữ dội hơn; khi giảm cũng rơi sâu hơn, được giới đầu tư gọi vui là 'vàng của người nghèo'. Một lựa chọn đòn bẩy theo chu kỳ kim loại quý.",
+    "events": []
+  },
+  "SJC": {
+    "name": "Vàng SJC",
+    "story": "Vàng miếng SJC là thương hiệu vàng độc quyền tại Việt Nam, thường có giá và mức chênh mua-bán cao hơn vàng thế giới do yếu tố nguồn cung và chính sách. Người mua chịu thiệt ngay khoản chênh lệch mua vào - bán ra, nên 'lướt sóng' ngắn hạn rất dễ lỗ. Mô phỏng này tính đúng spread đó: vừa mua đã thấy hụt.",
+    "events": []
+  },
+  "BTC": {
+    "name": "Bitcoin",
+    "story": "Bitcoin là tài sản gây chia rẽ nhất thế giới: người gọi là 'vàng kỹ thuật số', người gọi là bong bóng đầu cơ. Lịch sử của nó là chuỗi các chu kỳ bùng nổ rồi sụp đổ tàn khốc, mỗi lần đỉnh sau lại cao hơn đỉnh trước. Biến động cực lớn đòi hỏi thần kinh thép, không dành cho người yếu tim.",
+    "events": [
+      { "date": "2020-03-01", "label": "Sụp đổ do COVID" }
+    ]
+  },
+  "SPX": {
+    "name": "S&P 500",
+    "story": "S&P 500 gồm 500 công ty lớn nhất nước Mỹ, là thước đo chuẩn của cả thị trường chứng khoán Mỹ. Đây là 'điểm chuẩn' mà mọi nhà đầu tư so sánh: đánh bại được S&P 500 dài hạn là cực khó, kể cả với chuyên gia. Đại diện cho triết lý đầu tư chỉ số thụ động, kiên nhẫn và đa dạng hóa.",
+    "events": [
+      { "date": "2020-03-01", "label": "Sụp đổ do COVID" }
+    ]
+  },
+  "VNINDEX": {
+    "name": "VN-Index",
+    "story": "VN-Index là chỉ số đại diện cho toàn sàn HOSE, phong vũ biểu của chứng khoán Việt Nam. Làn sóng nhà đầu tư F0 thời lãi suất thấp đẩy chỉ số lên đỉnh quanh 1.500 điểm đầu năm 2022, rồi lao dốc mạnh nửa cuối năm khi tín dụng bị siết và loạt vụ thao túng bị xử lý. Một chu kỳ hưng phấn - sợ hãi điển hình.",
+    "events": []
+  },
+  "SAVINGS": {
+    "name": "Gửi tiết kiệm",
+    "story": "Đường tham chiếu mô phỏng gửi tiết kiệm ngân hàng với lãi suất giả định khoảng 6%/năm, kép liên tục. Đây là mốc 'an toàn nhất' để bạn so sánh: mọi tài sản rủi ro đều nên được đo xem có xứng đáng hơn việc chỉ gửi tiền không.",
+    "events": []
+  },
+  "CPI": {
+    "name": "Lạm phát VN",
+    "story": "Đường CPI thể hiện mức tăng giá chung tại Việt Nam, dùng để tính 'lợi nhuận thực' sau khi trừ lạm phát. Tiền không sinh lời nhanh hơn lạm phát thực chất là đang mất dần sức mua, dù con số trên tài khoản có vẻ tăng.",
+    "events": []
+  },
+  "ROS": {
+    "name": "FLC Faros",
+    "story": "ROS là biểu tượng cay đắng nhất của thao túng giá trên sàn Việt: từ vốn điều lệ được cho là 'thổi khống', cổ phiếu được kéo lên mức cao ngất ngưởng rồi sụp đổ thảm khốc. Sau khi ông Trịnh Văn Quyết bị bắt năm 2022, mã bị đình chỉ rồi hủy niêm yết, nhiều nhà đầu tư gần như mất trắng. Bài học xương máu về cổ phiếu 'rác' và niềm tin đặt sai chỗ.",
+    "events": [
+      { "date": "2022-09-05", "label": "Hủy niêm yết khỏi HOSE" }
+    ]
+  },
+  "DIG": {
+    "name": "DIC Corp",
+    "story": "DIG là ngôi sao của cơn sốt đất và đầu cơ bất động sản 2021-2022, được các 'đội lái' và nhà đầu tư cá nhân thổi giá tăng nhiều lần trong thời gian ngắn. Khi thị trường đảo chiều và dòng tiền đầu cơ rút đi cuối 2022, cổ phiếu lao dốc cực mạnh, cuốn theo loạt tài khoản dùng đòn bẩy. Câu chuyện điển hình của FOMO đỉnh sóng.",
+    "events": []
+  },
+  "STB": {
+    "name": "Sacombank",
+    "story": "Sacombank là câu chuyện 'tái cơ cấu' kéo dài hàng thập kỷ sau khi sáp nhập Southern Bank và gánh khối nợ xấu khổng lồ. Cổ phiếu STB phản ánh kỳ vọng vào quá trình xử lý nợ và bài toán đấu giá khoản nợ liên quan ông Trầm Bê. Một cược dài hơi vào sự hồi sinh của ngân hàng.",
+    "events": []
+  },
+  "QCG": {
+    "name": "Quốc Cường Gia Lai",
+    "story": "QCG nổi tiếng là cổ phiếu 'họ nhà Cường đô-la', biến động thất thường theo tin tức pháp lý và các thương vụ đất đai. Năm 2024, việc bà Nguyễn Thị Như Loan bị khởi tố cùng các lùm xùm liên quan dự án khiến cổ phiếu chao đảo mạnh. Tài sản gắn chặt với rủi ro pháp lý và sức khỏe của một gia đình lãnh đạo.",
+    "events": []
+  },
+  "EIB": {
+    "name": "Eximbank",
+    "story": "Eximbank là ngân hàng nổi tiếng với những cuộc chiến quyền lực thượng tầng kéo dài, đại hội cổ đông bất thành và liên tục thay đổi nhân sự cấp cao. Cổ phiếu EIB phản ánh sự giằng co giữa các nhóm cổ đông lớn hơn là kết quả kinh doanh thuần túy. Một ví dụ về rủi ro quản trị doanh nghiệp.",
+    "events": []
+  },
+  "GME": {
+    "name": "GameStop",
+    "story": "GameStop là tâm chấn của cơn sốt 'cổ phiếu meme' đầu năm 2021, khi cộng đồng nhỏ lẻ trên Reddit hè nhau mua để ép các quỹ bán khống phải mua lại trong cơn short squeeze huyền thoại. Giá tăng phi lý hàng chục lần trong vài ngày, biến đây thành cuộc chiến biểu tượng giữa nhà đầu tư cá nhân và Phố Wall. Bài học về tâm lý đám đông và sức mạnh mạng xã hội.",
+    "events": [
+      { "date": "2021-01-28", "label": "Đỉnh short squeeze" }
+    ]
+  },
+  "SMCI": {
+    "name": "Super Micro",
+    "story": "Super Micro chuyên sản xuất máy chủ và là một trong những cổ phiếu hưởng lợi nóng nhất từ cơn sốt hạ tầng AI, tăng dựng đứng năm 2023-2024. Nhưng sau đó cổ phiếu lao dốc giữa nghi vấn kế toán, báo cáo từ nhà bán khống và rủi ro bị hủy niêm yết. Một minh chứng cho việc câu chuyện tăng trưởng có thể đảo chiều rất nhanh.",
+    "events": []
+  },
+  "DJT": {
+    "name": "Trump Media",
+    "story": "DJT là công ty mẹ của mạng xã hội Truth Social, lên sàn năm 2024 qua thương vụ sáp nhập SPAC với DWAC giữa lúc ông Donald Trump tranh cử. Cổ phiếu giao dịch hoàn toàn theo cảm xúc chính trị và mức độ ủng hộ ông Trump hơn là kết quả kinh doanh, biến động cực mạnh. Một tài sản nơi chính trị và đầu cơ hòa làm một.",
+    "events": [
+      { "date": "2024-03-26", "label": "Lên sàn sau sáp nhập DWAC" }
+    ]
+  },
+  "META": {
+    "name": "Meta",
+    "story": "Meta (Facebook) đặt cược lớn vào vũ trụ ảo metaverse đến mức đổi cả tên công ty, nhưng khoản đầu tư khổng lồ cùng suy giảm quảng cáo khiến cổ phiếu rơi thảm hại năm 2022. Sau đó 'Năm hiệu quả' cắt giảm chi phí và làn sóng AI giúp cổ phiếu hồi phục ngoạn mục, một trong những cú lội ngược dòng đáng nhớ nhất. Bài học về việc thị trường trừng phạt rồi tha thứ rất nhanh.",
+    "events": [
+      { "date": "2021-10-28", "label": "Đổi tên thành Meta" }
+    ]
+  },
+  "LLY": {
+    "name": "Eli Lilly",
+    "story": "Eli Lilly là hãng dược lâu đời bứt phá nhờ thuốc tiểu đường và giảm cân thế hệ mới (Mounjaro, Zepbound) đúng lúc cơn sốt thuốc giảm cân bùng nổ toàn cầu. Nhu cầu khổng lồ đưa công ty thành một trong những hãng dược giá trị nhất hành tinh. Câu chuyện một 'ông già' ngành dược tìm lại tăng trưởng thần kỳ.",
+    "events": []
+  },
+  "AMD": {
+    "name": "AMD",
+    "story": "AMD từng bên bờ vực phá sản trước khi CEO Lisa Su dẫn dắt cuộc lội ngược dòng thần kỳ, cạnh tranh sòng phẳng với Intel ở CPU và NVIDIA ở GPU. Cổ phiếu trở thành một trong những khoản đầu tư công nghệ sinh lời nhất thập kỷ, rồi tiếp tục cưỡi sóng nhu cầu chip AI. Minh chứng cho sức mạnh của một cuộc xoay chuyển doanh nghiệp.",
+    "events": []
+  },
+  "AVGO": {
+    "name": "Broadcom",
+    "story": "Broadcom là gã khổng lồ bán dẫn và phần mềm lớn lên bằng chuỗi thâu tóm liên tục, gần đây là thương vụ VMware. Nhu cầu chip mạng và chip AI tùy chỉnh đưa cổ phiếu vào câu lạc bộ vốn hóa nghìn tỷ đô. Cú chia tách 10:1 năm 2024 giúp cổ phiếu dễ tiếp cận hơn với nhà đầu tư nhỏ lẻ.",
+    "events": [
+      { "date": "2024-07-15", "label": "Chia tách 10:1" }
+    ]
+  },
+  "VRT": {
+    "name": "Vertiv",
+    "story": "Vertiv cung cấp hạ tầng làm mát và điện cho trung tâm dữ liệu, trở thành 'người bán cuốc xẻng' thầm lặng của cơn bùng nổ AI. Khi cả thế giới đua nhau xây data center, nhu cầu giải nhiệt cho dàn chip nóng rực giúp cổ phiếu tăng mạnh. Một cách chơi sóng AI mà không cần mua chip.",
+    "events": []
+  },
+  "DGC": {
+    "name": "Hóa chất Đức Giang",
+    "story": "Đức Giang là 'vua phốt pho' Việt Nam, hưởng lợi cực lớn khi giá phốt pho vàng và hóa chất tăng vọt giai đoạn 2021-2022 nhờ nhu cầu sản xuất chip và pin toàn cầu. Lợi nhuận và cổ phiếu cùng bùng nổ, biến DGC thành ngôi sao của nhóm hóa chất. Câu chuyện một doanh nghiệp đúng ngành, đúng thời điểm siêu chu kỳ hàng hóa.",
+    "events": []
+  },
+  "HAG": {
+    "name": "HAGL",
+    "story": "Hoàng Anh Gia Lai của bầu Đức là câu chuyện thăng trầm kinh điển: từ đế chế bất động sản - cao su gánh núi nợ khổng lồ, đến màn 'comeback' gây sốt với heo ăn chuối và trái cây. Cổ phiếu HAG hồi sinh mạnh khi doanh nghiệp dần thoát lỗ lũy kế và giảm nợ. Biểu tượng của niềm tin vào sự tái sinh sau khủng hoảng.",
+    "events": []
+  },
+  "SSI": {
+    "name": "SSI",
+    "story": "SSI là công ty chứng khoán lớn nhất Việt Nam, cổ phiếu mang tính chu kỳ rõ rệt theo sức nóng của chính thị trường. Khi nhà đầu tư F0 đổ vào và thanh khoản bùng nổ 2021, SSI tăng mạnh; khi thị trường nguội lạnh 2022, cổ phiếu giảm sâu. Đầu tư SSI gần như là đặt cược vào tâm lý chung của toàn thị trường.",
+    "events": []
+  },
+  "VGI": {
+    "name": "Viettel Global",
+    "story": "Viettel Global mang chuông đi đánh xứ người, đầu tư mạng viễn thông tại nhiều thị trường châu Á, châu Phi và Mỹ Latinh. Sau nhiều năm lỗ tỷ giá và đầu tư, doanh nghiệp dần có lãi và cổ phiếu trên UPCoM tăng phi mã trong sóng 2024. Một câu chuyện vươn ra toàn cầu của thương hiệu quân đội.",
+    "events": []
+  },
+  "VTP": {
+    "name": "Viettel Post",
+    "story": "Viettel Post là doanh nghiệp chuyển phát và logistics thuộc hệ sinh thái Viettel, hưởng lợi từ bùng nổ thương mại điện tử. Việc chuyển từ UPCoM sang niêm yết HOSE đầu năm 2024 cùng tham vọng công viên logistics giúp cổ phiếu thu hút dòng tiền mạnh. Một cách chơi xu hướng e-commerce và logistics Việt Nam.",
+    "events": [
+      { "date": "2024-03-12", "label": "Niêm yết HOSE" }
+    ]
+  },
+  "COIN": {
+    "name": "Coinbase",
+    "story": "Coinbase là sàn giao dịch tiền mã hóa lớn nhất nước Mỹ, cổ phiếu gắn chặt với chu kỳ thăng trầm của thị trường crypto. Lên sàn đúng đỉnh sốt 2021 rồi rơi thảm trong 'mùa đông crypto' 2022, sau đó hồi phục theo sóng Bitcoin và làn sóng pháp lý cởi mở hơn. Mua COIN gần như là đặt cược đòn bẩy vào tương lai của crypto.",
+    "events": [
+      { "date": "2021-04-14", "label": "Niêm yết (direct listing)" }
+    ]
+  },
+  "CELH": {
+    "name": "Celsius",
+    "story": "Celsius là hãng nước tăng lực 'lành mạnh' tăng trưởng bùng nổ và trở thành một trong những cổ phiếu tiêu dùng nóng nhất, đặc biệt sau khi bắt tay phân phối với PepsiCo. Nhưng khi tăng trưởng chững lại và hàng tồn kho dồn ứ, cổ phiếu lao dốc mạnh từ đỉnh. Bài học kinh điển về việc trả giá quá cao cho kỳ vọng tăng trưởng.",
+    "events": []
+  },
+  "NVO": {
+    "name": "Novo Nordisk",
+    "story": "Novo Nordisk, hãng dược Đan Mạch, làm nên hiện tượng toàn cầu với thuốc tiểu đường và giảm cân Ozempic, Wegovy. Cơn sốt thuốc giảm cân đưa công ty thành doanh nghiệp giá trị nhất châu Âu một thời gian. Tuy nhiên cạnh tranh gay gắt từ Eli Lilly và kết quả thử nghiệm gây thất vọng sau đó khiến cổ phiếu hạ nhiệt mạnh.",
+    "events": []
+  },
+  "L14": {
+    "name": "Licogi 14",
+    "story": "L14 là cổ phiếu thị giá siêu cao gây chấn động trong sóng đầu cơ 2021-2022, gắn với những phát ngôn nổi tiếng của lãnh đạo trên diễn đàn chứng khoán. Từ vùng đỉnh vài trăm nghìn đồng, cổ phiếu sụp đổ khủng khiếp khi thị trường đảo chiều và khoản đầu tư tài chính thua lỗ. Một biểu tượng cảnh tỉnh về đỉnh của lòng tham.",
+    "events": []
+  },
+  "PNJ": {
+    "name": "PNJ",
+    "story": "PNJ là nhà bán lẻ trang sức vàng số một Việt Nam, khác với vàng miếng ở chỗ kiếm lời chính từ bán lẻ và chế tác chứ không chỉ giá vàng. Cổ phiếu tăng trưởng bền cùng tầng lớp trung lưu, dù từng chịu cú sốc đóng cửa hàng loạt cửa hàng thời COVID. Một cách chơi sức mua tiêu dùng hơn là đặt cược vào giá vàng.",
+    "events": []
+  }
+}

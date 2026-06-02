@@ -1,0 +1,12 @@
+# Data pipeline dependencies — pinned to the exact versions verified against a
+# successful end-to-end `scripts/update_data.py` run (2026-06-02).
+# Pin so a future breaking release of yfinance/vnstock cannot silently break fetches.
+#
+# Python 3.12.x.  numpy is a transitive dep of pandas; not pinned here.
+
+yfinance==1.4.1
+vnstock==4.0.4
+beautifulsoup4==4.14.3
+lxml==6.1.0
+pandas==2.3.3
+requests==2.33.1
