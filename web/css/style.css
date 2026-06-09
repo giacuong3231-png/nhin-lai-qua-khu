@@ -408,15 +408,43 @@ html, body {
     height: auto; min-height: 100vh;
   }
   /* Put the "wow" (cards + chart) FIRST on narrow screens, controls below. */
-  .stage    { order: 1; }
+  .stage    { order: 1; min-height: 0; }
   .controls { order: 2; overflow: visible; }
   .ticker-scroll { max-height: 360px; min-height: 0; }
-  .stage { min-height: 70vh; }
   .below { grid-template-columns: 1fr; max-height: none; }
   .cards { grid-template-columns: repeat(3, 1fr); }
+
+  /* P0 FIX: the ECharts container needs an EXPLICIT height on mobile. The desktop
+     grid gives it a definite height; the flex-column layout here does not, so
+     `.echart { height: 100% }` resolved to 0 and the chart was invisible. */
+  .chart-wrap { flex: none; height: 360px; min-height: 360px; }
+  .echart     { height: 360px; }
+
+  /* Bigger tap targets (~44px) for fingers; bump small labels for readability. */
+  .seg-btn { min-height: 44px; }
+  .chip, .preset { min-height: 40px; display: inline-flex; align-items: center; font-size: 13px; }
+  .asset { min-height: 42px; padding: 8px 11px 8px 9px; }
+  .toggle { min-height: 46px; }
+  .play-btn { min-height: 40px; }
+  .story-tab { min-height: 30px; display: inline-flex; align-items: center; font-size: 12px; }
+  /* 16px on inputs stops iOS from auto-zooming the page when they get focus. */
+  .num-input { font-size: 16px; min-height: 46px; }
+  .num-input.date { font-size: 14px; min-height: 44px; }
+  .ctl-label { font-size: 12px; }
+  .tier-count { font-size: 12px; }
+  .card-label { font-size: 12.5px; }
+  .card-note  { font-size: 12px; }
 }
 @media (max-width: 520px) {
   .cards { grid-template-columns: 1fr 1fr; }
   .card-value { font-size: 18px; }
   .app { padding: 10px; gap: 10px; }
+  .chart-wrap { height: 300px; min-height: 300px; }
+  .echart     { height: 300px; }
+  /* Trim the summary table to essentials so it fits phone width (worst-drawdown
+     is already shown on the red risk card above). */
+  .summary .col-cagr,
+  .summary .col-dd,
+  .summary .col-real,
+  .summary .row-name { display: none; }
 }

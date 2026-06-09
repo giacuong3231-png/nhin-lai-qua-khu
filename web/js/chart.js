@@ -181,7 +181,7 @@
       return {
         backgroundColor: 'transparent',
         animation: true,
-        animationDuration: 600,
+        animationDuration: 300,
         animationEasing: 'cubicOut',
         color: PALETTE,
         textStyle: { fontFamily: 'Inter, sans-serif', color: TEXT_COLOR },
@@ -253,8 +253,9 @@
       if (!this.chart) return;
       this.stop(); // cancel any running animation
       const opt = this._buildOption(run, ctx);
-      // `notMerge:true` so removed tickers/markers fully clear.
-      this.chart.setOption(opt, { notMerge: true });
+      // `notMerge:true` so removed tickers/markers fully clear; `lazyUpdate` defers
+      // the heavy render to the next frame so param changes feel snappier on mobile.
+      this.chart.setOption(opt, { notMerge: true, lazyUpdate: true });
     },
 
     /**

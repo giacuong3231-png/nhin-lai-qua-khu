@@ -114,8 +114,12 @@ function backtestApp() {
         window.addEventListener('resize', () => BacktestChart.resize());
 
         this.ready = true;
-        // One more compute after layout settles so the chart sizes correctly.
-        this.$nextTick(() => { BacktestChart.resize(); });
+        // One more resize after layout settles so the chart sizes correctly —
+        // twice, because on mobile the flex layout height lands a tick late.
+        this.$nextTick(() => {
+          BacktestChart.resize();
+          window.setTimeout(() => BacktestChart.resize(), 250);
+        });
       } catch (e) {
         console.error('[app.js] init failed', e);
         this.loadError = e && e.message ? e.message : String(e);

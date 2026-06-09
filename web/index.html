@@ -228,9 +228,9 @@
                 <th>Vốn nạp</th>
                 <th>Giá trị</th>
                 <th>% lãi</th>
-                <th>CAGR</th>
-                <th>Sụt sâu nhất</th>
-                <th x-show="realTerms">Giá trị thực</th>
+                <th class="col-cagr">CAGR</th>
+                <th class="col-dd">Sụt sâu nhất</th>
+                <th class="col-real" x-show="realTerms">Giá trị thực</th>
               </tr>
             </thead>
             <tbody>
@@ -244,9 +244,9 @@
                   <td class="mono" x-text="r.fInvested"></td>
                   <td class="mono" x-text="r.fFinal"></td>
                   <td class="mono" :class="r.up ? 'pos' : 'neg'" x-text="r.fPct"></td>
-                  <td class="mono" :class="r.cagr >= 0 ? 'pos' : 'neg'" x-text="r.fCagr"></td>
-                  <td class="mono dim" x-text="r.fDd"></td>
-                  <td class="mono" x-show="realTerms" x-text="r.fReal"></td>
+                  <td class="mono col-cagr" :class="r.cagr >= 0 ? 'pos' : 'neg'" x-text="r.fCagr"></td>
+                  <td class="mono dim col-dd" x-text="r.fDd"></td>
+                  <td class="mono col-real" x-show="realTerms" x-text="r.fReal"></td>
                 </tr>
               </template>
               <tr x-show="summaryRows.length === 0">
