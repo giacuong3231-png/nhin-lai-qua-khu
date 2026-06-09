@@ -15,8 +15,9 @@ data/raw/*
 Thumbs.db
 .claude/
 
-# Logs
+# Logs / temp
 *.log
+*.tmp
 
 # Note: data/processed/*.json and web/data/*.json ARE committed so GitHub Pages works.
 
