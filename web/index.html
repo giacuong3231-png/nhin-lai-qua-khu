@@ -112,7 +112,10 @@
         <div class="ticker-scroll">
           <template x-for="g in tiers" :key="g.tier">
             <div class="tier">
-              <div class="tier-label" x-text="g.label"></div>
+              <div class="tier-label">
+                <span x-text="g.label"></span>
+                <span class="tier-count" x-text="g.assets.length"></span>
+              </div>
               <div class="tier-assets">
                 <template x-for="a in g.assets" :key="a.key">
                   <button class="asset"
@@ -151,7 +154,10 @@
           <div class="card-value" x-text="cards ? cards.invested : '—'"></div>
         </div>
         <div class="card">
-          <div class="card-label">Giá trị hiện tại</div>
+          <div class="card-label">
+            Giá trị hiện tại
+            <span class="card-note" x-show="cards && cards.realTerms">(đã trừ lạm phát)</span>
+          </div>
           <div class="card-value" x-text="cards ? cards.value : '—'"></div>
         </div>
         <div class="card" :class="cards && cards.up ? 'pos' : 'neg'">
@@ -162,7 +168,18 @@
           <div class="card-label">Chênh lệch</div>
           <div class="card-value" x-text="cards ? cards.diff : '—'"></div>
         </div>
+        <!-- Worst drawdown surfaced next to the gains, in warning red. -->
+        <div class="card card-risk">
+          <div class="card-label">Lúc tệ nhất từng</div>
+          <div class="card-value mono" x-text="cards ? cards.worstDrawdown : '—'"></div>
+        </div>
       </div>
+
+      <!-- Survivorship-bias caveat (always shown, low-key amber) -->
+      <p class="caveat">
+        ⚠ Danh mục gồm các mã nổi tiếng đã biết kết quả — chọn lọc theo độ nổi tiếng,
+        KHÔNG phải khuyến nghị. Quá khứ không đảm bảo tương lai.
+      </p>
 
       <!-- Chart toolbar -->
       <div class="chart-bar">

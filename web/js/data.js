@@ -121,8 +121,11 @@
     return {
       ...MOCK_META,
       ...real,
-      assets: { ...MOCK_META.assets, ...(real.assets || {}) },
-      presets: { ...MOCK_META.presets, ...(real.presets || {}) },
+      // When real meta exists, assets & presets come ENTIRELY from real — mock is
+      // only a fallback when real is missing them. This prevents mock-only entries
+      // (e.g. the "Drama" demo preset, Trump Media) from leaking into the real UI.
+      assets:  (real.assets  && Object.keys(real.assets).length)  ? real.assets  : MOCK_META.assets,
+      presets: (real.presets && Object.keys(real.presets).length) ? real.presets : MOCK_META.presets,
       fees: { ...MOCK_META.fees, ...(real.fees || {}) },
     };
   }

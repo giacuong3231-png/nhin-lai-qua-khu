@@ -14,15 +14,16 @@
   --border:       #272c31;
   --border-soft:  #21262b;
 
-  /* text */
+  /* text — brightened for readability on the dark surface (higher contrast) */
   --text:         #e6edf3;
-  --text-dim:     #98a2ac;
-  --text-faint:   #6b747e;
+  --text-dim:     #aab2bd;
+  --text-faint:   #99a3ad;
 
   /* accent + semantic */
   --accent:       #4ea1ff;
   --pos:          #36d399;
   --neg:          #ff6b6b;
+  --warn:         #f5b14a;
 
   /* type */
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -109,8 +110,8 @@ html, body {
 }
 .brand .sub {
   margin: 4px 0 0;
-  font-size: 12px;
-  color: var(--text-faint);
+  font-size: 14px;
+  color: var(--text-dim);
   line-height: 1.45;
 }
 
@@ -193,15 +194,23 @@ html, body {
 /* Ticker picker */
 .ticker-scroll {
   overflow-y: auto;
-  min-height: 0;
+  min-height: 220px; /* show several tiers before the fold on desktop */
   flex: 1;
   padding-right: 4px;
   margin-right: -4px;
   display: flex; flex-direction: column; gap: 14px;
 }
 .tier-label {
-  font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.07em; color: var(--text-faint); margin-bottom: 7px;
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--text-dim); margin-bottom: 7px;
+  display: flex; align-items: center; gap: 7px;
+}
+/* Count badge so users know each tier has tickers below (discoverability). */
+.tier-count {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  color: var(--text-dim); letter-spacing: 0;
+  background: var(--bg-elev); border: 1px solid var(--border);
+  border-radius: 999px; padding: 1px 7px; line-height: 1.5;
 }
 .tier-assets { display: flex; flex-wrap: wrap; gap: 6px; }
 .asset {
@@ -222,9 +231,9 @@ html, body {
   width: 7px; height: 7px; border-radius: 50%;
   background: var(--border); flex: none;
 }
-.asset-key { font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
-.asset-name { font-size: 11px; color: var(--text-faint); }
-.asset.on .asset-name { color: var(--text-dim); }
+.asset-key { font-family: var(--font-mono); font-size: 13px; font-weight: 600; }
+.asset-name { font-size: 13px; color: var(--text-dim); }
+.asset.on .asset-name { color: var(--text); }
 
 /* Toggles */
 .toggles { gap: 8px; }
@@ -261,7 +270,7 @@ html, body {
 /* Headline cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
 }
 .card {
@@ -271,8 +280,12 @@ html, body {
   padding: 13px 15px;
 }
 .card-label {
-  font-size: 11px; font-weight: 500; color: var(--text-faint);
+  font-size: 12px; font-weight: 500; color: var(--text-dim);
   text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;
+}
+.card-note {
+  display: block; text-transform: none; letter-spacing: 0;
+  font-size: 11px; font-weight: 500; color: var(--text-faint); margin-top: 2px;
 }
 .card-value {
   font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
@@ -282,6 +295,20 @@ html, body {
 .card.neg { border-color: color-mix(in srgb, var(--neg) 35%, var(--border)); }
 .card.pos .card-value { color: var(--pos); }
 .card.neg .card-value { color: var(--neg); }
+
+/* Risk card: worst drawdown, always red so danger is visible next to the gains. */
+.card-risk { border-color: color-mix(in srgb, var(--neg) 35%, var(--border)); }
+.card-risk .card-value { color: var(--neg); }
+
+/* Survivorship-bias caveat — low-key amber, readable but not loud. */
+.caveat {
+  margin: 0;
+  font-size: 12px; line-height: 1.5; color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--warn) 28%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
 
 /* Chart toolbar */
 .chart-bar {
@@ -348,13 +375,13 @@ html, body {
   overflow: auto;
 }
 .summary {
-  width: 100%; border-collapse: collapse; font-size: 12.5px;
+  width: 100%; border-collapse: collapse; font-size: 13px;
 }
 .summary thead th {
   position: sticky; top: 0;
   background: var(--bg-panel);
-  text-align: right; font-weight: 600; color: var(--text-faint);
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
+  text-align: right; font-weight: 600; color: var(--text-dim);
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em;
   padding: 8px 10px; border-bottom: 1px solid var(--border);
   white-space: nowrap;
 }
@@ -367,24 +394,26 @@ html, body {
 .summary tbody tr:hover { background: var(--bg-elev); cursor: default; }
 .row-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
 .row-key { font-family: var(--font-mono); font-weight: 600; }
-.row-name { color: var(--text-faint); font-size: 11px; margin-left: 7px; }
+.row-name { color: var(--text-dim); font-size: 13px; margin-left: 7px; }
 
 .disclaimer {
-  margin: 12px 2px 0; font-size: 11px; color: var(--text-faint); line-height: 1.5;
+  margin: 12px 2px 0; font-size: 13px; color: var(--text-dim); line-height: 1.5;
 }
 
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
   .app {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
     height: auto; min-height: 100vh;
   }
-  .controls { overflow: visible; }
-  .ticker-scroll { max-height: 260px; }
-  .stage { min-height: 80vh; }
+  /* Put the "wow" (cards + chart) FIRST on narrow screens, controls below. */
+  .stage    { order: 1; }
+  .controls { order: 2; overflow: visible; }
+  .ticker-scroll { max-height: 360px; min-height: 0; }
+  .stage { min-height: 70vh; }
   .below { grid-template-columns: 1fr; max-height: none; }
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 520px) {
   .cards { grid-template-columns: 1fr 1fr; }

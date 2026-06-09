@@ -96,7 +96,9 @@ function backtestApp() {
 
         // Default to ONE preset to reduce cognitive load.
         const presetNames = Object.keys(this.presets);
-        const preferred = presetNames.find(n => n === 'Siêu lợi nhuận') || presetNames[0];
+        const preferred = presetNames.find(n => n === 'Toàn cảnh')
+          || presetNames.find(n => n === 'Siêu lợi nhuận')
+          || presetNames[0];
         if (preferred) {
           this.applyPreset(preferred);
         } else {
@@ -283,41 +285,53 @@ function backtestApp() {
 
     _buildSummary(run) {
       const assets = this._dataset.meta.assets || {};
+      const real = this.realTerms;
       const rows = run.order.map(t => {
         const m = run.byTicker[t].metrics;
+        // In real-terms mode the displayed "final value" is the inflation-adjusted
+        // value (today's money expressed in start-of-window purchasing power). Invested
+        // stays nominal (approximation, matches the real chart line). Derive profit /
+        // % / CAGR from that real final so cards + table change with the toggle.
+        const finalShown = real ? m.finalReal : m.finalValue;
+        const profit = finalShown - m.invested;
+        const pctReturn = m.invested > 0 ? profit / m.invested : 0;
+        const cagr = (m.invested > 0 && finalShown > 0 && m.holdYears > 0)
+          ? Math.pow(finalShown / m.invested, 1 / m.holdYears) - 1
+          : 0;
         return {
           key: t,
           name: (assets[t] && assets[t].name) || t,
           color: this.colors[t],
           invested: m.invested,
-          finalValue: m.finalValue,
-          profit: m.profit,
-          pctReturn: m.pctReturn,
-          cagr: m.cagr,
-          maxDrawdown: m.maxDrawdown,
+          finalValue: finalShown,
+          profit,
+          pctReturn,
+          cagr,
+          maxDrawdown: m.maxDrawdown,   // drawdown stays nominal
           finalReal: m.finalReal,
           buys: m.buys,
           // formatted
           fInvested: fmtVndExact(m.invested),
-          fFinal: fmtVndExact(m.finalValue),
-          fProfit: fmtVndExact(m.profit),
-          fPct: fmtPct(m.pctReturn),
-          fCagr: fmtPct(m.cagr),
+          fFinal: fmtVndExact(finalShown),
+          fProfit: fmtVndExact(profit),
+          fPct: fmtPct(pctReturn),
+          fCagr: fmtPct(cagr),
           fDd: fmtPct(-m.maxDrawdown),
           fReal: fmtVndExact(m.finalReal),
-          up: m.profit >= 0,
+          up: profit >= 0,
         };
       });
-      // Sort by final value descending so the "winner" is on top.
+      // Sort by final (displayed) value descending so the "winner" is on top.
       rows.sort((a, b) => b.finalValue - a.finalValue);
       this.summaryRows = rows;
 
       // Headline cards = AGGREGATE across all selected tickers (like the video's summary).
-      let totInv = 0, totVal = 0;
+      let totInv = 0, totVal = 0, worstDD = 0;
       run.order.forEach(t => {
         const m = run.byTicker[t].metrics;
         totInv += m.invested;
-        totVal += m.finalValue;
+        totVal += real ? m.finalReal : m.finalValue;
+        if (m.maxDrawdown > worstDD) worstDD = m.maxDrawdown;
       });
       const totProfit = totVal - totInv;
       const totPct = totInv > 0 ? totProfit / totInv : 0;
@@ -328,6 +342,9 @@ function backtestApp() {
         diff: fmtMoney(totProfit),
         up: totProfit >= 0,
         nTickers: run.order.length,
+        // Worst single-ticker drawdown across the selection (nominal). Shown red.
+        worstDrawdown: run.order.length ? fmtPct(-worstDD) : '—',
+        realTerms: real,
       };
     },
 

@@ -88,6 +88,9 @@ FEES = {
 
 # Curated comparison sets — 1-click presets to reduce cognitive load on the UI.
 PRESETS = {
+    # Balanced default: 1 winner + crypto + gold + savings + VN-Index benchmark.
+    # Gives a "wow" line plus safe anchors (gold/savings) and a market reference.
+    "Toàn cảnh":      ["NVDA", "BTC", "XAUUSD", "SAVINGS", "VNINDEX"],
     "Sóng AI":        ["NVDA", "AMD", "SMCI", "AVGO", "TSM", "VRT"],
     "Crypto & MSTR":  ["BTC", "MSTR", "COIN"],
     "Drama VN":       ["ROS", "DIG", "L14", "STB", "QCG"],
