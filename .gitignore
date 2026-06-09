@@ -19,3 +19,6 @@ Thumbs.db
 *.log
 
 # Note: data/processed/*.json and web/data/*.json ARE committed so GitHub Pages works.
+
+# Local Netlify folder
+.netlify
